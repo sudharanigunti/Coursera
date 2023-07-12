@@ -1,0 +1,18 @@
+Topic 1: 
+#PyTorch supports two different types of datasets: map-style datasets, iterable-style datasets.
+
+# Three general characteristics of Data Sets namely: Dimensionality, Sparsity, and Resolution.
+# Dimensionality: number of attributes that the objects in the data set have
+# Sparsity: most attributes of an object have values of 0; in many cases fewer than 1% of the entries are non-zero
+# Resolution: The patterns in the data depend on the level of resolution. If the resolution is too fine, a pattern may not be visible or may be buried in noise; if the resolution is too coarse, the pattern may disappear
+# Curse of Dimensionality : Data Analysis becomes difficult as the dimensionality of the data set increases
+
+
+# 3 types of datsets: Record Data, Graph-based Data, and Ordered Data
+# Record Data = Data matrix, Document Term matrix, transaction data, records of data
+# Graph-based Data = Linked Webpages, Beneze molecule
+# Ordered Data = Sequqntial transaction data, Temperature time series, Spatial temperature data, Genomin Sequence data
+
+Reference: https://towardsdatascience.com/types-of-data-sets-in-data-science-data-mining-machine-learning-eb47c80af7a#:~:text=Finally%2C%20coming%20on%20the,based%20Data%2C%20and%20Ordered%20Data.
+
+Topic 2:

@@ -1,0 +1,18 @@
+Ways to Improve Accuracy Score:
+
+1. Clean data (Mostly in Real-time data)
+      1.1 Missing Values
+      1.2 Unneccsary columns
+
+2. Feature Engineering
+      2.1 Create NEW FEATURES : From existing features create one or more new features by seeing ex: HOME-Address, WORK-Address columns , create "DISTANCE" new feature.
+      2.2 Find CORRELATION b/w features, create new feature that capture relationships
+      2.3 Do DATA BALANCING : To get a Balanced dataset, do SMOTE or resampling (up or down sample)
+      2.4 Apply STANDARDIZATION to the data: To get data with mean = 0, Standard deviation = 1
+      2.5 Use Feature Extraction, Selection: Find the MOST IMPORTANT FEATURES in the dataset
+
+
+3. Algorithm
+      3.1 Run on list of MULTIPLE ALGORITHMS (for loop) : SVM, Tree, NN, XGBoost, CatBoost, ...Ensemble(combines 2 or more algos)
+      3.2 Do CROSS VALIDATION : Use Xfolds
+      3.3 TUNING PARAMETERS : Find Optimal Hyperparameters using OPTUNA, Grid Search, H

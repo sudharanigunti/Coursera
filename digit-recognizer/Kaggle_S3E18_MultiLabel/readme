@@ -1,0 +1,21 @@
+Multi-Label classification:
+It can be solved in 3 ways - 
+      1. Problem Transformation: In this you transform Multi Label into Single Label problem. By using anyone among 3 methods i.e Binary Relevance, Classifeir chains, Labels Powerset.
+      2. Adapted Algorithm: 
+      3. Ensemble Approaches:
+
+Ex:
+from sklearn.multiclass import OneVsRestClassifier
+model = OneVsRestClassifier(RandomForestClassifier())
+model.fit(x_train, y_train)
+
+y_train = Class_1 Class_2 Class_3
+            0        1       0
+            0        0       1
+            1        1       1
+            1        0       0
+            1        1       1
+            1        0       0
+
+
+

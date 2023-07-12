@@ -1,0 +1,21 @@
+From IMU sensor we collect the data from the robot.
+6 arms, each arm with 3 sensors
+
+Inner Layer 1: 
+Step 1: lift the leg (Based on equipment capability, define this builtin height value) 
+Step 2: move the leg in air (forward, backward, sideways), 
+Step 3: put down the leg. (Collect the height from raised leg to surface (from sensor) or pass the value from step 1)
+
+Follow step 1 to 3 for all 6 legs.
+
+Layer 2: (Direction Define)
+Based on this direction, we define the which legs to move at same time. (Grouping the legs based on direction)
+Step 1: move forward()
+step 2: check the obstacle in front/side/backward from the sensor, define the free forward distance minimum 2 leg size of robot is free of obstacles. straight and wide of the robot size is free of obstacles
+Step 3: if forward and no obstacle in front: pair 1= pair (leg 1, leg 2), pair 2 = pair (leg 3, leg 4), pair 3 =  pair (leg 5, leg 6)
+
+Integration layer for 1 and 2:
+For each pair : while(pair_done = 3) 
+Step 1: call the layer 1 parallelly ; once done pair_done++; continue with other pair
+
+Layer 4: Voice to text: Move forward , move forward 2 steps, move backward (when steps is not defined, continue moving until obstacle occured or other voice command received.)
